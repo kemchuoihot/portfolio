@@ -49,3 +49,36 @@
 .project__button:hover{
     font-weight: var(--font-medium);
 }
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .project__container{
+        gap:1.25rem
+    }
+    .project__card{
+        padding: 1rem;
+    }
+    .project__img{
+        margin-bottom: 0.75rem;
+    }
+    .project__title{
+        margin-bottom: 0.25rem;
+    }
+  }
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+    .project__container{
+        grid-template-columns: max-content;
+    }
+  }
+  
+  
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+    
+  }
+  
