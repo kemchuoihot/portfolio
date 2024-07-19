@@ -1,7 +1,7 @@
 import React from 'react';
 import './about.css'
 import AboutIMG from '../../assets/avt.jpg'
-import CV from '../../assets/pic1.jpg'
+import CV from '../../assets/CV_NguyenPhucThinh_Frontend.pdf'
 import Infor from './Infor.jsx'
 const About = () => {
     return (
@@ -19,7 +19,7 @@ const About = () => {
                         Motivated and dynamic aspiring front-end developer seeking an position to leverage my enthusiasm for learning, creativity, and dedication. Eager to contribute to a team environment and further develop my skills in web technologies.
                     </p>
 
-                    <a download="" href={CV} className="button button--flex">
+                    <button onClick={() => window.open(CV)} className="button button--flex">
                         Download my CV
                         <svg
                             class="button__icon"
@@ -46,7 +46,7 @@ const About = () => {
                             fill="var(--container-color)"
                             ></path>
                         </svg>
-                    </a>
+                    </button>
                 </div>
             </div>
         </section>
