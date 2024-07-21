@@ -27,10 +27,10 @@ const Project = () => {
                     <h3 className="project__title">PHP web films</h3>
                     <div className="project__link">
                         <a href="https://movie-city-2024.000webhostapp.com/" className="project__button">
-                        <i class='bx bx-link'></i> Demo <i className="project__button-icon bx bx-right-arrow-alt"></i>
+                            <i class='bx bx-link'></i> Demo <i className="project__button-icon bx bx-right-arrow-alt"></i>
                         </a>
                         <a href="https://github.com/kemchuoihot/city-movie" className="project__button">
-                        <i class='bx bxl-github' ></i>Github <i className="project__button-icon bx bx-right-arrow-alt"></i>
+                            <i class='bx bxl-github' ></i>Github <i className="project__button-icon bx bx-right-arrow-alt"></i>
                         </a>
                     </div>
                 </div>

@@ -44,7 +44,10 @@
 }
 
 .footer__social-link:hover{
-    background-color: var(--title-color-dark);
+    background-color: transparent;
+    color: var(--title-color);
+    box-shadow: inset 0 0 0 0.12rem var(--title-color);
+    transition: all 0.3s ease-in-out;
 }
 
 .footer__copy{
