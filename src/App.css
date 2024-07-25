@@ -113,6 +113,9 @@ img {
 
 .section {
   padding: 6rem 0 2rem;
+  animation: appear ease-in-out both 0.2s;
+  animation-timeline: view();
+  animation-range: entry 0%;
 }
 
 .section__title {
@@ -163,6 +166,18 @@ img {
 .button--flex {
   display: inline-flex;
   align-items: center;
+}
+
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.6;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
 }
 
 /*=============== BREAKPOINTS ===============*/
