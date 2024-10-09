@@ -1,11 +1,19 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './about.css'
 import AboutIMG from '../../assets/avt.jpg'
 import CV from '../../assets/CV_NguyenPhucThinh_Internship-Frontend.pdf'
 import Infor from './Infor.jsx'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const About = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 2000,
+            delay: 100,
+        });
+    }, []);
     return (
-        <section className="section about" id="about">
+        <section className="section about" id="about" data-aos="fade-up">
             <h2 className="section__title">About Meee</h2>
             <span className="section__subtitle">
                 My introduction

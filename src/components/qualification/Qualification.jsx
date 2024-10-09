@@ -1,12 +1,20 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import './qualification.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Qualification = () => {
     const [toggleState,setToggleState] = useState(1);
     const toggleTab = (index) =>{
         setToggleState(index);
     }
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            delay: 100,
+        });
+    }, []);
     return (
-        <section className="section qualification" id='qualification'>
+        <section className="section qualification" id='qualification' data-aos="fade-up">
             <h2 className="section__title">Qualification</h2>
             <span className="section__subtitle">My personal journey</span>
             <div className="qualification__container container">

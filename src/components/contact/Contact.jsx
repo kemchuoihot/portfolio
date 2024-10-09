@@ -1,9 +1,17 @@
-import React, { useRef } from 'react';
+import React, { useRef,useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import './contact.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Contact = () => {
 
+    useEffect(() => {
+        AOS.init({
+            duration: 2000,
+            delay: 100,
+        });
+    }, []);
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -17,7 +25,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="contact section" id="contact">
+        <section className="contact section" id="contact" data-aos="fade-up">
             <h2 className="section__title">Get in touch</h2>
             <span className="section__subtitle">Contact me</span>
 

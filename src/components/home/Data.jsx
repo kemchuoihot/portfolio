@@ -1,8 +1,15 @@
-import React from 'react';
-
+import React, {useEffect} from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Data = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 2000,
+            delay: 100,
+        });
+    }, []);
     return (
-        <div className="home__data">
+        <div className="home__data" data-aos="fade-right">
             <h1 className="home__title">
                 Phuc Thinh
                 <svg

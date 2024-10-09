@@ -1,11 +1,19 @@
-import React from 'react';
+import Reac,{useEffect} from 'react';
 import './project.css';
 import Film from '../../assets/film.png';
 import POS from '../../assets/POS.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Project = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 2000,
+            delay: 100,
+        });
+    }, []);
     return (
-        <section className="project section" id="project">
+        <section className="project section" id="project" data-aos="fade-up">
             <h2 className="section__title">Project</h2>
             <span className="section__subtitle">My recent projects</span>
             <div className="project__container container grid">

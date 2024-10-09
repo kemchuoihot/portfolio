@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './footer.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Footer = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 2000,
+            delay: 100,
+        });
+        // Refresh AOS on component mount
+        AOS.refresh();
+    }, []);
+
     return (
-        <footer className="footer">
+        <footer className="footer" data-aos="zoom-in">
             <div className="footer__container container">
                 <h1 className="footer__title">Kindy</h1>
 
@@ -17,13 +29,6 @@ const Footer = () => {
                         <a href="#testimonals" className="footer__link">Testimonals</a>
                     </li>
                 </ul>
-
-                <div className="footer__social">
-                    <a href="https://www.instagram.com/thinh.npt/" className="footer__social-link" targer="_blank"><i class="uil uil-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/thinh-nguyen-21ba67284/" className="footer__social-link" targer="_blank"><i class="uil uil-linkedin-alt"></i></a>
-                    <a href="https://github.com/kemchuoihot" className="footer__social-link" targer="_blank"><i class="uil uil-github-alt"></i></a>
-                </div>
-                <span className="footer__copy">&#169; Kindyy. All rights reserved</span>
             </div>
         </footer>
     );
