@@ -11,7 +11,11 @@ const Contact = () => {
             duration: 2000,
             delay: 100,
         });
+        // Refresh AOS on component mount
+        AOS.refresh();
     }, []);
+    // Refresh AOS on component mount
+    AOS.refresh();
     const form = useRef();
 
     const sendEmail = (e) => {

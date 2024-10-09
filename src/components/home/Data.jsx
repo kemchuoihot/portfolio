@@ -7,6 +7,8 @@ const Data = () => {
             duration: 2000,
             delay: 100,
         });
+        // Refresh AOS on component mount
+        AOS.refresh();
     }, []);
     return (
         <div className="home__data" data-aos="fade-right">

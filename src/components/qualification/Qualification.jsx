@@ -12,6 +12,8 @@ const Qualification = () => {
             duration: 1000,
             delay: 100,
         });
+        // Refresh AOS on component mount
+        AOS.refresh();
     }, []);
     return (
         <section className="section qualification" id='qualification' data-aos="fade-up">

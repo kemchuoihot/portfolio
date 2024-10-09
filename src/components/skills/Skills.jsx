@@ -10,6 +10,8 @@ const Skills = () => {
             duration: 1000,
             delay: 100,
         });
+        // Refresh AOS on component mount
+        AOS.refresh();
     }, []);
     return (
         <section data-aos="fade-up" className="skills section" id='skills'>

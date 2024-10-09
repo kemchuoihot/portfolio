@@ -11,6 +11,8 @@ const Project = () => {
             duration: 2000,
             delay: 100,
         });
+        // Refresh AOS on component mount
+        AOS.refresh();
     }, []);
     return (
         <section className="project section" id="project" data-aos="fade-up">
