@@ -10,7 +10,7 @@ const Data = () => {
         AOS.refresh();
     }, []);
     return (
-        <div className="home__data" data-aos="fade-right">
+        <div className="home__data" data-aos="zoom-in-up">
             <h1 className="home__title">
                 Phuc Thinh
                 <svg

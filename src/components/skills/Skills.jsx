@@ -13,7 +13,7 @@ const Skills = () => {
         AOS.refresh();
     }, []);
     return (
-        <section data-aos="fade-up" className="skills section" id='skills'>
+        <section data-aos="zoom-in-up" className="skills section" id='skills'>
             <h2 className="section__title">Skills</h2>
             <span className="section__subtitle">
                 My technical skills

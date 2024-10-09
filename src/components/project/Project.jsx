@@ -1,4 +1,4 @@
-import Reac,{useEffect} from 'react';
+import React,{useEffect} from 'react';
 import './project.css';
 import Film from '../../assets/film.png';
 import POS from '../../assets/POS.png';
@@ -14,7 +14,7 @@ const Project = () => {
         AOS.refresh();
     }, []);
     return (
-        <section className="project section" id="project" data-aos="fade-up">
+        <section className="project section" id="project" data-aos="zoom-in-up">
             <h2 className="section__title">Project</h2>
             <span className="section__subtitle">My recent projects</span>
             <div className="project__container container grid">

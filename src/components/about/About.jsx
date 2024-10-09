@@ -15,7 +15,7 @@ const About = () => {
         AOS.refresh();
     }, []);
     return (
-        <section className="section about" id="about" data-aos="fade-up">
+        <section className="section about" id="about" data-aos="zoom-in-up">
             <h2 className="section__title">About Meee</h2>
             <span className="section__subtitle">
                 My introduction
