@@ -8,7 +8,6 @@ const Skills = () => {
     useEffect(() => {
         AOS.init({
             duration: 1000,
-            delay: 100,
         });
         // Refresh AOS on component mount
         AOS.refresh();

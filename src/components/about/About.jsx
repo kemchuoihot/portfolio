@@ -9,7 +9,7 @@ const About = () => {
     useEffect(() => {
         AOS.init({
             duration: 3000,
-            delay: 100,
+
         });
         // Refresh AOS on component mount
         AOS.refresh();
