@@ -8,7 +8,7 @@ import 'aos/dist/aos.css';
 const About = () => {
     useEffect(() => {
         AOS.init({
-            duration: 2000,
+            duration: 3000,
             delay: 100,
         });
         // Refresh AOS on component mount

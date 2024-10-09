@@ -9,7 +9,7 @@ const Qualification = () => {
     }
     useEffect(() => {
         AOS.init({
-            duration: 1000,
+            duration: 3000,
             delay: 100,
         });
         // Refresh AOS on component mount
