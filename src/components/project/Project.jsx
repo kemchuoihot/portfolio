@@ -40,17 +40,17 @@ const Project = () => {
         </div>
         <div className="project__card">
           <img className="project__img" src={Film} alt="" srcset="" />
-          <h3 className="project__title">PHP web films</h3>
+          <h3 className="project__title">Movie streaming</h3>
           <div className="project__link">
             <a
-              href="https://movie-city-2024.000webhostapp.com/"
+              href="https://movie-streaming-azure.vercel.app/"
               className="project__button"
             >
               <i class="bx bx-link"></i> Demo{" "}
               <i className="project__button-icon bx bx-right-arrow-alt"></i>
             </a>
             <a
-              href="https://github.com/kemchuoihot/city-movie"
+              href="https://github.com/kemchuoihot/movie-streaming"
               className="project__button"
             >
               <i class="bx bxl-github"></i>Github{" "}
